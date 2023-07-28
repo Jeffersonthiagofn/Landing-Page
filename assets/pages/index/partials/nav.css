@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#090d1780;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav h2.logo {
+    font-family: var(--bold);
+    font-size: 1.3rem;
+    color: var(--cor-branco);
+    letter-spacing: 10px;
+}
+
+nav .opcoes a {
+    font-family: var(--regular);
+    font-size: 0.9rem;
+    color: var(--cor-branco);
+    text-decoration: none;
+    margin: 0 0 0 20px;
+}
+
+nav .opcoes a.destaque{
+    font-family: var(--bold);
+    color: var(--cor-vermelho);
+}
