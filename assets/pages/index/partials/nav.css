@@ -2,12 +2,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:#090d1780;
+    background-color:#2b2b2b10;
+    backdrop-filter: blur(10px);
     padding: 20px 60px;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
+    z-index: 3;
 }
 
 nav h2.logo {
@@ -23,9 +25,27 @@ nav .opcoes a {
     color: var(--cor-branco);
     text-decoration: none;
     margin: 0 0 0 20px;
+    transition: all 0.3s;
 }
 
 nav .opcoes a.destaque{
     font-family: var(--bold);
     color: var(--cor-vermelho);
 }
+
+nav .opcoes a:hover {
+    opacity: 0.5;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+    nav {
+      padding: 20px;
+    }
+    nav .opcoes a {
+      display: none;
+    }
+    nav .opcoes a.destaque {
+      display: flex;
+    }
+  }

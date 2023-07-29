@@ -1,0 +1,77 @@
+section.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.topo img.circulo {
+    position: absolute;
+    z-index: 1;
+    animation: girarcirculo 30s linear infinite;
+}
+
+@keyframes girarcirculo{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+section.topo img.circulo.um {
+    top: -700px;
+    left: -450px;
+}
+
+section.topo img.circulo.dois {
+    bottom: -500px;
+    right: -250px;
+    opacity: 0.5;
+}
+
+
+section.topo h1 {
+    font-family: var(--bold);
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+section.topo span {
+    color: var(--cor-vermelho);
+}
+
+section.topo iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    margin: 30px 0 30px 0;
+    border-radius: 20px;
+    z-index: 2;
+
+}
+
+section.topo a {
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+section.topo a:hover {
+    color: var(--cor-vermelho);
+    background-color: var(--cor-branco);
+}
