@@ -75,3 +75,33 @@ section.topo a:hover {
     color: var(--cor-vermelho);
     background-color: var(--cor-branco);
 }
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+    section.topo {
+        padding: 100px 20px 60px 20px;
+    }
+    
+    section.topo img.circulo.um {
+        top: -750px;
+        left: -580px;
+    }
+    
+    section.topo img.circulo.dois {
+        bottom: -650px;
+        right: -600px;
+    }
+
+    section.topo h1 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+
+    section.topo iframe {
+        max-width: 360px;
+        height: 190px;
+        margin: 30px 0 30px 0;
+        border-radius: 10px;
+     }
+}
