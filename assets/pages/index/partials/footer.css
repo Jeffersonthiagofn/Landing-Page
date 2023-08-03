@@ -1,0 +1,14 @@
+footer{
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     background-color: var(--cor-vermelho);
+     padding: 2px;
+}
+
+footer p {
+    font-family: var(--bold);
+    font-size: clamp(0.5rem);
+    color: var(--cor-branco);
+    text-align: center;
+}
